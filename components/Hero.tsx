@@ -40,7 +40,7 @@ const Hero = () => {
           />
 
           <p className="text-center tracking-wider text-muted-foreground text-sm md:text-lg lg:text-xl mb-4">
-            Hello, i'm Cyrus, a Next.js Developer
+            Hello, i&apos;m Cyrus, a Next.js Developer
           </p>
 
           <a href="#about">
