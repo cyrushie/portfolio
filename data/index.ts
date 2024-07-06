@@ -93,7 +93,7 @@ export const projects = [
     des: "Explore my portfolio, a collection highlighting my creative projects and skills.",
     img: "/p7.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/ace.png"],
-    link: "https://cyrus-portfolio.vercel.app/",
+    link: "https://cyrusmanguerra.vercel.app/",
   },
   {
     id: 3,
