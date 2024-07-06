@@ -10,8 +10,7 @@ const RecentProjects = () => {
       id="projects"
     >
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        My <span className="text-primary">Projects</span>
       </h1>
       <div className="flex flex-wrap mt-10 items-center justify-center p-4 gap-x-24 gap-y-8">
         {projects.map((project) => (
@@ -20,7 +19,7 @@ const RecentProjects = () => {
             key={project.id}
           >
             <PinContainer
-              title="Visit"
+              title={project.link}
               href={project.link}
             >
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h[40vh]   mb-10">
@@ -40,14 +39,14 @@ const RecentProjects = () => {
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 text-foreground">
                 {project.title}
               </h1>
 
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 text-muted-foreground"
                 style={{
-                  color: "#BEC1DD",
+                  // color: "#BEC1DD",
                   margin: "1vh 0",
                 }}
               >
@@ -74,13 +73,10 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                  <p className="flex lg:text-xl md:text-xs text-sm text-primary">
                     Check Live Site
                   </p>
-                  <FaLocationArrow
-                    className="ms-3"
-                    color="#CBACF9"
-                  />
+                  <FaLocationArrow className="ms-3 text-primary" />
                 </div>
               </div>
             </PinContainer>

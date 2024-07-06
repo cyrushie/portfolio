@@ -5,21 +5,22 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 import { useState } from "react";
 
-const Approach = () => {
+const LearningPath = () => {
   return (
-    <section className="w-full py-20">
+    <section
+      className="w-full py-20"
+      id="other"
+    >
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        My <span className="text-primary">Learning Path</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
+          title="Exploration & Learning"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des=" I start by exploring new topics and resources, including tutorials, documentation, and articles. This phase helps me build a strong foundation of knowledge."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -28,11 +29,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Hands-on Practice"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="I apply what I've learned by working on small projects or exercises. This phase helps solidify my understanding through practical application."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -50,11 +49,9 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Advanced Projects & Integration"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="I take on more complex projects that integrate my new skills with existing knowledge. This phase involves solving real-world problems and contributing to larger projects."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -90,9 +87,9 @@ const Card = ({
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(4,7,29)",
+        background: "rgba(51, 33, 18)",
         backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+          "linear-gradient(90deg, rgba(51, 33, 18, 1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
       {/* change to h-10 w-10 , add opacity-30  */}
@@ -145,18 +142,11 @@ const Card = ({
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>
-      {/* this btn is from https://ui.aceternity.com/components/tailwindcss-buttons border magic */}
-      {/* change rounded-lg, text-purple px-5 py-2 */}
-      {/* remove focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 cuz we don't need to focus */}
-      {/* remove text-sm font-medium h-12 , add font-bold text-2xl */}
       <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
-        <span
-          className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
-         bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
-        />
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#f3b375_0%,#66577e_50%,#f3b375_100%)]" />
         <span
           className="inline-flex h-full w-full cursor-pointer items-center 
-        justify-center rounded-full bg-slate-950 px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl"
+        justify-center rounded-full bg-secondary px-5 py-2 text-muted-foreground backdrop-blur-3xl font-bold text-2xl"
         >
           {order}
         </span>
@@ -185,4 +175,4 @@ const Icon = ({ className, ...rest }: any) => {
   );
 };
 
-export default Approach;
+export default LearningPath;
