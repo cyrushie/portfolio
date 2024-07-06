@@ -6,21 +6,6 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 
 ## Technologies Used
 
-- **Frontend**: Next.js, TypeScript, Tailwind CSS, Atlaskit (formerly AternityUI)
-- **Authentication**: Clerk
-- **Database**: Prisma
-- **Payment Processing**: Stripe
-
-## Features
-
-- **Responsive Design**: The website is fully responsive, ensuring a seamless experience across all devices.
-- **Project Showcase**: Highlights various projects with detailed descriptions, technologies used, and links to live demos or repositories.
-- **Secure Authentication**: Implemented using Clerk for secure login and session management.
-- **Modern UI Components**: Utilize
-
-
-## Technologies Used
-
 - **Frontend**: Next.js, TypeScript, Tailwind CSS, Aceternity
 
 ## Features
