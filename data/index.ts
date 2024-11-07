@@ -85,7 +85,7 @@ export const projects = [
       "/re.svg",
       "/tail.svg",
     ],
-    link: "https://cardsdocs-sugune.vercel.app/",
+    link: "https://cardsdocs.vercel.app/",
   },
   {
     id: 2,
